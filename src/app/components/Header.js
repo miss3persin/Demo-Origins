@@ -77,12 +77,12 @@ export default function Header({ title = '', fixed = false }) {
 
       <div className="flex items-center space-x-4">
         <a
-          href="https://donation-link.com"
+          href="https://buymeacoffee.com/miss3persin"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-500 transition-all ease-in-out duration-200 hover:bg-transparent hover:text-black dark:bg-transparent dark:text-[#ACA992] border border-blue-500 dark:border-[#ACA992] dark:hover:text-black dark:hover:bg-[#ACA992] text-white px-4 py-2 rounded"
         >
-          Donate
+          Buy Me a Coffee
         </a>
         <a
           href="https://www.webnovel.com/book/demo-origins_29672720800874805"
