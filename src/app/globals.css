@@ -29,6 +29,50 @@ html {
 
 
 
+  /* Target the default success toast and change the background color to blue */
+  .Toastify__toast--success .Toastify__progress-bar {
+    background-color: #3b82f6 !important; 
+  }
+
+  .Toastify__toast--success .Toastify__progress-bar--success {
+    background-color: #3b82f6 !important;
+  }
+
+  .dark .Toastify__toast--success .Toastify__progress-bar {
+    background-color: #ACA992 !important; 
+  }
+
+  .dark .Toastify__toast--success .Toastify__progress-bar--success {
+    background-color: #ACA992 !important;
+  }
+
+  .Toastify__toast--success path {
+    fill: #3b82f6 !important;
+  }
+
+  .Toastify__toast--success p {
+    fill: #ACA992 !important;
+  }
+
+  .dark .Toastify__toast--success path {
+    fill: #ACA992 !important;
+  }
+
+.Toastify__close-button {
+  color: #3b82f6 !important;
+}
+
+.dark .Toastify__close-button {
+  color: #ACA992 !important;
+}
+
+.dark .Toastify__toast--success {
+  background-color: #000000 !important; /* Blue color */
+}
+
+
+
+
   @media (min-width: 425px) and (max-width: 640px) {
     .return-text {
       display: block;
