@@ -14,13 +14,13 @@ const page = () => {
         <Header />
         <div className='mt-12 flex flex-col items-center gap-2 text-center'>
           <div className='flex-1'>
-            <h1 className='mb-10 text-5xl font-extrabold text-gray-900 dark:text-[#ACA992]'>
+            <h1 className='mb-10 text-3xl lg:text-4xl xl:text-5xl font-extrabold text-gray-900 dark:text-[#ACA992]'>
               Demo Origins
             </h1>
 
-            <div className='mb-10 flex items-center justify-center gap-6'>
+            <div className='mb-10 flex flex-col sm:flex-row 2xl:flex-col items-center justify-center gap-6'>
               <Link href='/chapters/1'>
-                <button className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'>
+                <button className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-xs'>
                   Start from the Beginning
                 </button>
               </Link>
@@ -29,7 +29,7 @@ const page = () => {
           </div>
 
           <div className='flex w-full flex-1 flex-col items-center justify-center'>
-            <div className='flex w-72 justify-center overflow-hidden pb-10'>
+            <div className='flex w-72 xl:w-96 justify-center overflow-hidden pb-10'>
               <Image
                 src='/cover.jpg'
                 alt='demo origins'
@@ -42,10 +42,10 @@ const page = () => {
               />
             </div>
 
-            <div className='w-full'>
-              <p className='mb-20 mt-4 px-36 text-gray-700 dark:text-[#ACA992]'>
-                <span className='text-lg font-medium'>SYNOPSIS</span> <br />
-                <br />
+            <div className='w-full mt-4'>
+                <span className='text-lg text-center font-medium'>SYNOPSIS</span>
+              <p className='mb-20 mt-4 text-justify text-sm lg:text-base sm:px-[6.5rem] md:px-24 xl:px-36 lg:px-20 2xl:px-52 text-gray-700 dark:text-[#ACA992]'>
+
                 Locked in a wooden stock, I faced execution by guillotine after
                 a heist gone wrong. I braced for the end, but just as the blade
                 was about to fall, a shadowy figure appeared out of nowhere and
@@ -54,10 +54,9 @@ const page = () => {
                 Join the club.
               </p>
 
-              <p className='mb-10 px-36 text-gray-700 dark:text-[#ACA992]'>
-                <span className='text-lg font-medium'>ACKNOWLEDGMENT</span>{' '}
-                <br />
-                <br />I would first like to acknowledge God, the ultimate
+                <span className='text-lg text-center font-medium'>ACKNOWLEDGMENTS</span>{' '}
+              <p className='mb-10 text-justify mt-4  text-sm lg:text-base sm:px-[6.5rem] md:px-24 xl:px-36 lg:px-20 2xl:px-52 text-gray-700 dark:text-[#ACA992]'>
+ I would first like to acknowledge God, the ultimate
                 creative. My family deserves recognition for nurturing my
                 creativity; without them, the novel wouldn’t exist. Thanks to my
                 friends for encouraging my creative spirit. I’m grateful to

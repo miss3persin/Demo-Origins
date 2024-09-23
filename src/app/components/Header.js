@@ -107,11 +107,11 @@ export default function Header({ title = '', fixed = false }) {
           alt='Author'
           className='h-12 w-12 rounded-full'
         />
-        <div className='ml-4 hidden md:block'>
+        <div className='ml-2 sm:ml-4 hidden return-text sm:block'>
           <h1 className='font-bold text-gray-900 dark:text-[#ACA992] md:text-lg lg:text-2xl'>
             Demo Origins
           </h1>
-          <p className='m-0 p-0 text-gray-900 dark:text-[#ACA992] md:text-xs lg:text-sm'>
+          <p className='m-0 p-0 text-gray-900 dark:text-[#ACA992] text-xs lg:text-sm'>
             By miss3persin
           </p>
         </div>
@@ -153,7 +153,7 @@ export default function Header({ title = '', fixed = false }) {
           href='https://buymeacoffee.com/miss3persin'
           target='_blank'
           rel='noopener noreferrer'
-          className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-xs text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl'
+          className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-xs text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl'
         >
           Buy Me a Coffee
         </a>
@@ -161,7 +161,7 @@ export default function Header({ title = '', fixed = false }) {
           href='https://dynamic.webnovel.com/download'
           target='_blank'
           rel='noopener noreferrer'
-          className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-xs text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl'
+          className='rounded border border-blue-500 bg-blue-500 px-4 py-2 text-xs text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl'
         >
           Read on App
         </a>

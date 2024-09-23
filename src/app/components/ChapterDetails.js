@@ -58,7 +58,7 @@ const ChapterDetails = ({
           {prevChapterId && (
             <button
               onClick={() => router.push(`/chapters/${prevChapterId}`)}
-              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
             >
               <ChevronLeftIcon className='hidden md:flex md:h-4 md:w-5 lg:h-5 lg:w-6 2xl:h-7 2xl:w-6' />
               Previous Chapter
@@ -67,7 +67,7 @@ const ChapterDetails = ({
           {nextChapterId && (
             <button
               onClick={() => router.push(`/chapters/${nextChapterId}`)}
-              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
             >
               Next Chapter
               <ChevronRightIcon className='hidden md:flex md:h-4 md:w-5 lg:h-5 lg:w-6 2xl:h-7 2xl:w-6' />
@@ -90,7 +90,7 @@ const ChapterDetails = ({
           {prevChapterId && (
             <button
               onClick={() => router.push(`/chapters/${prevChapterId}`)}
-              className='sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs flex items-center justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+              className='sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-xs flex items-center justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
             >
               <ChevronLeftIcon className='hidden md:flex md:h-4 md:w-5 lg:h-5 lg:w-6 2xl:h-7 2xl:w-6' />
               Previous Chapter
@@ -99,7 +99,7 @@ const ChapterDetails = ({
           {nextChapterId && (
             <button
               onClick={() => router.push(`/chapters/${nextChapterId}`)}
-              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+              className='flex items-center sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl text-xs justify-center gap-3 rounded border border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
             >
               Next Chapter
               <ChevronRightIcon className='hidden md:flex md:h-4 md:w-5 lg:h-5 lg:w-6 2xl:h-7 2xl:w-6' />

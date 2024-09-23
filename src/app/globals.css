@@ -28,6 +28,13 @@ html {
   }
 
 
+
+  @media (min-width: 425px) and (max-width: 640px) {
+    .return-text {
+      display: block;
+    }
+  }
+
 /* Default styles for span inside p */
 .content-wrapper p {
   margin-bottom: 0; /* Default font size */

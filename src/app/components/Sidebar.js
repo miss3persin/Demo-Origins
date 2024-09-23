@@ -37,16 +37,16 @@ export default function Sidebar() {
   return (
     <aside
       className={`${
-        collapsed ? 'w-36 ' : 'w-[67rem]'
-      } color-change hidden sm:block relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg  dark:border-r dark:bg-black`}
+        collapsed ? 'md:w-80 lg:w-56 xl:w-48 2xl:w-40' : 'md:w-[81rem] lg:w-[98rem] xl:w-[67rem] 2xl:w-[80rem]'
+      } color-change hidden md:block relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg  dark:border-r dark:bg-black`}
     >
       <div
         className={`${
-          collapsed ? 'w-10' : 'w-[14.5rem]'
+          collapsed ? 'w-10' : 'md:w-[9rem] lg:w-[14.5rem] xl:w-[13.7rem] 2xl:w-[19.2rem]'
         } transition-width fixed h-[95%] duration-300 ease-out`}
       >
         <button
-          className='mb-4 flex w-full items-center justify-center border-b pb-4 text-gray-700 dark:border-[#ACA992] dark:text-[#ACA992]'
+          className='mb-4 mt-4 flex w-full items-center justify-center border-b pb-4 text-gray-700 dark:border-[#ACA992] dark:text-[#ACA992]'
           onClick={() => setCollapsed(!collapsed)}
         >
           {collapsed ? (
@@ -54,7 +54,7 @@ export default function Sidebar() {
           ) : (
             <ChevronDoubleLeftIcon className='h-6 w-6' />
           )}
-          <span className={`${collapsed ? 'hidden' : 'ml-2 pr-5'}`}>
+          <span className={`${collapsed ? 'hidden' : 'ml-2 pr-5 2xl:text-xl font-bold'}`}>
             Chapter List
           </span>
         </button>
@@ -89,7 +89,7 @@ export default function Sidebar() {
             {chapters.map(chapter => (
               <li key={chapter.id}>
                 <Link href={`/chapters/${chapter.id}`}>
-                  <p className='block rounded p-2 text-xs text-gray-900 hover:bg-gray-200 dark:text-[#ACA992] dark:hover:bg-[#aca99231]'>
+                  <p className='block rounded p-2 text-xs xl:text-sm 2xl:text-lg text-gray-900 hover:bg-gray-200 dark:text-[#ACA992] dark:hover:bg-[#aca99231]'>
                     {collapsed ? (
                       <span className='flex items-center justify-center'>
                         {chapter.id}
