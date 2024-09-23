@@ -14,9 +14,12 @@ const page = () => {
         <Header />
         <div className='mt-12 flex flex-col items-center gap-2 text-center'>
           <div className='flex-1'>
-            <h1 className='mb-10 text-3xl font-extrabold text-gray-900 dark:text-[#ACA992] lg:text-4xl xl:text-5xl'>
+            <h1 className='mb-3 text-3xl font-extrabold text-gray-900 dark:text-[#ACA992] lg:text-4xl xl:text-5xl'>
               Demo Origins
             </h1>
+            <p className='mb-10 font-bold text-gray-900 dark:text-[#ACA992] text-xs sm:text-sm md:text-sm lg:text-lg 2xl:text-2xl'>
+              A webnovel by miss3persin
+            </p>
 
             <div className='mb-10 flex flex-col items-center justify-center gap-6 sm:flex-row 2xl:flex-col'>
               <Link href='/chapters/1'>
@@ -44,7 +47,7 @@ const page = () => {
             </div>
 
             <div className='mt-4 w-full'>
-              <span className='text-center text-lg font-medium'>SYNOPSIS</span>
+              <span className='text-center text-lg text-gray-700 dark:text-[#ACA992] font-medium'>SYNOPSIS</span>
               <p className='mb-20 mt-4 text-justify text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
                 Locked in a wooden stock, I faced execution by guillotine after
                 a heist gone wrong. I braced for the end, but just as the blade
@@ -53,7 +56,7 @@ const page = () => {
                 <br /> <br /> Confused? So am I. Want to know what happens next?
                 Join the club.
               </p>
-              <span className='text-center text-lg font-medium'>
+              <span className='text-center text-lg text-gray-700 dark:text-[#ACA992] font-medium'>
                 ACKNOWLEDGMENTS
               </span>{' '}
               <p className='mb-10 mt-4 text-justify text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
