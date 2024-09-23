@@ -26,4 +26,106 @@ html {
   h1, h2, h3, h4, p, button {
     transition: color 1.5s ease; /* You can customize this for different headings or elements */
   }
+
+
+/* Default styles for span inside p */
+.content-wrapper p {
+  margin-bottom: 0; /* Default font size */
+}
+
+/* .content-wrapper  p:first-of-type span {
+  font-size: 16px;
+} */
+
+/* Default styles for span inside p */
+.content-wrapper p span {
+  font-size: 13px; /* Default font size */
+  line-height: 50% !important;
+}
+
+
+/* For screens wider than 640px (sm) */
+@media (min-width: 640px) {
+  /* .content-wrapper p:first-of-type span {
+    font-size: 18px;
+  } */
+
+  .content-wrapper p span {
+    font-size: 13px;
+    line-height: 90% !important;
+    
+  }
+}
+
+/* For screens wider than 768px (md) */
+@media (min-width: 768px) {
+  /* .content-wrapper p:first-of-type span {
+    font-size: 18px;
+  } */
+
+  .content-wrapper p span {
+    font-size: 15px;
+    line-height: 100% !important;
+  }
+}
+
+/* For screens wider than 1024px (lg) */
+@media (min-width: 1024px) {
+  /* .content-wrapper p:first-of-type span {
+    font-size: 27px;
+  } */
+
+  .content-wrapper p span {
+    font-size: 16px;
+    line-height: 130% !important;
+  }
+}
+
+/* For screens wider than 1280px (xl) */
+@media (min-width: 1280px) {
+  /* .content-wrapper p:first-of-type span {
+    font-size: 35px;
+  } */
+
+  .content-wrapper p span {
+    font-size: 20px;
+    line-height: 150% !important;
+  }
+}
+
+/* For screens wider than 1536px (2xl) */
+@media (min-width: 1536px) {
+  /* .content-wrapper p:first-of-type span:first-of-type {
+    font-size: 40px;
+  } */
+
+  .content-wrapper p span {
+    font-size: 30px;
+    line-height: 200% !important;
+  }
+}
+
+
+
+  /* .content-wrapper div {
+    border-bottom-color: #FF0000 !important;
+  } */
+
+  .content-wrapper div {
+    border-bottom-color: #000000 !important; /* Default color for light mode */
+  }
+  
+  .dark .content-wrapper div {
+    border-bottom-color: #ACA992 !important; /* Color for dark mode */
+  }
+
+
+  .content-wrapper div hr{
+    border-color: #000000 !important; /* Default color for light mode */
+  }
+  
+  .dark .content-wrapper div hr{
+    border-color: #ACA992 !important; /* Color for dark mode */
+  }
+  
   

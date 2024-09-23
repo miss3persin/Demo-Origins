@@ -19,9 +19,9 @@ export default function ChapterContent({ content }) {
   // }, []); // Empty dependency array ensures this effect runs only once
 
   return (
-    <div className="px-52">
-      <article className="prose dark:prose-dark max-w-none text-gray-900 dark:text-[#ACA992]">
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+    <div className="px-6 sm:px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-52">
+      <article className="prose dark:prose-dark max-w-none text-gray-900 dark:text-[#ACA992] ">
+        <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: content }} />
       </article>
     </div>
   );

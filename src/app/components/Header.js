@@ -59,7 +59,7 @@ export default function Header({ title = '', fixed = false }) {
         fixed
           ? 'fixed left-0 right-0 top-0 z-50 px-20 transition-transform duration-300'
           : 'static px-10'
-      } color-change flex items-center justify-between border-[#ACA992] bg-white py-4 shadow-md dark:border-b dark:bg-black ${
+      } flex items-center justify-between border-[#ACA992] bg-white py-4 shadow-md dark:border-b dark:bg-black ${
         fixed && scrollDirection === 'down'
           ? '-translate-y-full'
           : 'translate-y-0'
@@ -97,7 +97,7 @@ export default function Header({ title = '', fixed = false }) {
           href='https://buymeacoffee.com/miss3persin'
           target='_blank'
           rel='noopener noreferrer'
-          className='rounded border text-base border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+          className='rounded border sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
         >
           Buy Me a Coffee
         </a>
@@ -105,7 +105,7 @@ export default function Header({ title = '', fixed = false }) {
           href='https://dynamic.webnovel.com/download'
           target='_blank'
           rel='noopener noreferrer'
-          className='rounded border text-base border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
+          className='rounded border sm:text-sm md:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-xs border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
         >
           Read on App
         </a>
