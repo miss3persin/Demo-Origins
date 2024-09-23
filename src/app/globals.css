@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* global.css */
+
+/* Transition for background color and text color */
+html {
+    transition: background-color 1.5s ease, color 1.5s ease;
+  }
+  
+  /* Optional: Apply transitions to specific elements */
+  body {
+    transition: background-color 1.5s ease, color 1.5s ease;
+  }
+
+  .color-change{
+    transition: background-color 1.5s ease, color 1.5s ease;
+    transition: width 0.2s ease-out;
+  }
+
+  button{
+    transition: background-color 1.5s ease, color 1.5s ease;
+  }
+  
+  h1, h2, h3, h4, p, button {
+    transition: color 1.5s ease; /* You can customize this for different headings or elements */
+  }
+  

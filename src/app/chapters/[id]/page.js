@@ -11,11 +11,28 @@ export default function ChapterPage() {
   const [chapter, setChapter] = useState(null)
   const [error, setError] = useState(null)
 
-  // Example next and previous chapter IDs, you should replace these with actual data from your chapters
-  const prevChapterId = id > 1 ? (parseInt(id) - 1).toString() : null // Replace with actual logic
-  const nextChapterId = (parseInt(id) + 1).toString() // Replace with actual logic
+  // State to determine if next chapter exists
+  const [nextChapterExists, setNextChapterExists] = useState(false)
+
+  // Example previous chapter ID
+  const prevChapterId = id > 1 ? (parseInt(id) - 1).toString() : null 
+
+  // Check if next chapter ID exists in the database
+  const checkNextChapter = async () => {
+    const nextId = (parseInt(id) + 1).toString()
+    try {
+      const response = await fetch(`/api/chapters/${nextId}`)
+      setNextChapterExists(response.ok) // true if the chapter exists
+    } catch (error) {
+      console.error('Error checking next chapter:', error)
+      setNextChapterExists(false)
+    }
+  }
 
   useEffect(() => {
+    // Check for next chapter when the component mounts
+    checkNextChapter()
+    
     const fetchChapter = async () => {
       try {
         const response = await fetch(`/api/chapters/${id}`)
@@ -40,8 +57,7 @@ export default function ChapterPage() {
     } else {
       document.documentElement.classList.remove('dark')
     }
-  }, []) // Only run on mount
-
+  }, [])
 
   if (error) {
     return <Error/>
@@ -51,15 +67,13 @@ export default function ChapterPage() {
     return <Loader/>
   }
 
-//   const isFirstChapter = chapter.id === 1 // Assuming chapter.id is the ID of the chapter
-
   return (
     <div className='min-h-screen bg-gray-100 dark:bg-black'>
       <ChapterDetails
         chapterId={id}
         chapter={chapter}
         prevChapterId={prevChapterId}
-        nextChapterId={nextChapterId}
+        nextChapterId={nextChapterExists ? (parseInt(id) + 1).toString() : null} // Pass the next ID if it exists
       />
     </div>
   )

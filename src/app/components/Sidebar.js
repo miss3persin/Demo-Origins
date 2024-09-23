@@ -37,8 +37,8 @@ export default function Sidebar() {
   return (
     <aside
       className={`${
-        collapsed ? 'w-28' : 'w-[35rem]'
-      } transition-width relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg duration-300 ease-out dark:border-r dark:bg-black`}
+        collapsed ? 'w-36' : 'w-[67rem]'
+      } color-change relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg  dark:border-r dark:bg-black`}
     >
       <div
         className={`${
@@ -85,7 +85,7 @@ export default function Sidebar() {
             </div>
           </div>
         ) : (
-          <ul className='space-y-2 overflow-auto h-[91%]'>
+          <ul className='space-y-2  h-[91%]'>
             {chapters.map(chapter => (
               <li key={chapter.id}>
                 <Link href={`/chapters/${chapter.id}`}>

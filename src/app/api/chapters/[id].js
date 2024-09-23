@@ -1,19 +1,40 @@
-import { db } from '../../../firebase';
+import { db } from '../../../../../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 
-export default async function handler(req, res) {
-  const { id } = req.query;
+import { db } from '../../../../../firebase';
+import { doc, getDoc } from 'firebase/firestore';
+
+export async function GET(_, { params }) {
+  const { id } = params;
   
   try {
     const docRef = doc(db, 'chapters', id);
     const docSnap = await getDoc(docRef);
-
+    
     if (docSnap.exists()) {
-      res.status(200).json(docSnap.data());
+      const data = docSnap.data();
+
+      // Convert Firestore Timestamp to JavaScript Date
+      const chapterData = {
+        ...data,
+        createdAt: data.createdAt ? data.createdAt.toDate() : null, // Ensure it's converted
+      };
+
+      return new Response(JSON.stringify(chapterData), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
     } else {
-      res.status(404).json({ error: 'Chapter not found' });
+      return new Response(JSON.stringify({ error: 'Chapter not found' }), {
+        status: 404,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
   } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch chapter data' });
+    console.error('Error fetching chapter data:', error);
+    return new Response(JSON.stringify({ error: 'Failed to fetch chapter data' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }

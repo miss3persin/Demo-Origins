@@ -1,108 +1,125 @@
 'use client'
 
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'; // Import the icons
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid' // Import the icons
 
 export default function Header({ title = '', fixed = false }) {
-  const [darkMode, setDarkMode] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState('up');
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const router = useRouter();
+  const [darkMode, setDarkMode] = useState(false)
+  const [scrollDirection, setScrollDirection] = useState('up')
+  const [lastScrollY, setLastScrollY] = useState(0)
+  const router = useRouter()
 
   useEffect(() => {
-    const storedPreference = localStorage.getItem('theme');
+    const storedPreference = localStorage.getItem('theme')
     if (storedPreference === 'dark') {
-      setDarkMode(true);
-      document.documentElement.classList.add('dark');
+      setDarkMode(true)
+      document.documentElement.classList.add('dark')
     }
-  }, []);
+  }, [])
 
   const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
+    const newDarkMode = !darkMode
+    setDarkMode(newDarkMode)
     if (newDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
     }
-  };
+  }
 
   // Handle scroll behavior only if fixed prop is passed
   useEffect(() => {
     if (fixed) {
       const handleScroll = () => {
-        const currentScrollY = window.scrollY;
+        const currentScrollY = window.scrollY
 
         if (currentScrollY > lastScrollY) {
-          setScrollDirection('down');
+          setScrollDirection('down')
         } else {
-          setScrollDirection('up');
+          setScrollDirection('up')
         }
 
-        setLastScrollY(currentScrollY);
-      };
+        setLastScrollY(currentScrollY)
+      }
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll)
 
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
-  }, [fixed, lastScrollY]);
+  }, [fixed, lastScrollY])
 
   return (
     <header
       className={`${
         fixed
-          ? 'fixed top-0 left-0 right-0 z-50 transition-transform duration-300'
-          : 'static'
-      } flex justify-between items-center py-4 px-10 bg-white dark:bg-black dark:border-b border-[#ACA992] shadow-md ${
-        fixed && scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
+          ? 'fixed left-0 right-0 top-0 z-50 px-20 transition-transform duration-300'
+          : 'static px-10'
+      } color-change flex items-center justify-between border-[#ACA992] bg-white py-4 shadow-md dark:border-b dark:bg-black ${
+        fixed && scrollDirection === 'down'
+          ? '-translate-y-full'
+          : 'translate-y-0'
       }`}
     >
-      <div className="flex items-center cursor-pointer" onClick={() => router.push('/')}>
-        <img src="/author-profile.jpg" alt="Author" className="h-12 w-12 rounded-full" />
-        <div className="ml-4">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-[#ACA992]">Demo Origins</h1>
-          <p className="text-sm text-gray-900 dark:text-[#ACA992]">By miss3persin</p>
+      <div
+        className='flex cursor-pointer items-center'
+        onClick={() => router.push('/')}
+      >
+        <img
+          src='/author-profile.jpg'
+          alt='Author'
+          className='h-12 w-12 rounded-full'
+        />
+        <div className='ml-4'>
+          <h1 className='text-2xl font-bold text-gray-900 dark:text-[#ACA992]'>
+            Demo Origins
+          </h1>
+          <p className='m-0 p-0 text-sm text-gray-900 dark:text-[#ACA992]'>
+            By miss3persin
+          </p>
         </div>
       </div>
 
-      <div>
-        <p className="text-base font-bold text-gray-900 dark:text-[#ACA992]">{title}</p>
-      </div>
+      {title && (
+        <div className='flex h-16 w-[30rem] items-center justify-center overflow-hidden'>
+          <p className='m-0 text-ellipsis whitespace-normal p-0 text-center text-xl font-bold leading-tight text-gray-900 dark:text-[#ACA992]'>
+            {title}
+          </p>
+        </div>
+      )}
 
-      <div className="flex items-center space-x-4">
+      <div className='flex items-center space-x-4'>
         <a
-          href="https://buymeacoffee.com/miss3persin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-500 transition-all ease-in-out duration-200 hover:bg-transparent hover:text-black dark:bg-transparent dark:text-[#ACA992] border border-blue-500 dark:border-[#ACA992] dark:hover:text-black dark:hover:bg-[#ACA992] text-white px-4 py-2 rounded"
+          href='https://buymeacoffee.com/miss3persin'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='rounded border text-base border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
         >
           Buy Me a Coffee
         </a>
         <a
-          href="https://dynamic.webnovel.com/download"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-500 transition-all ease-in-out duration-200 hover:bg-transparent hover:text-black dark:bg-transparent dark:text-[#ACA992] border border-blue-500 dark:border-[#ACA992] dark:hover:text-black dark:hover:bg-[#ACA992] text-white px-4 py-2 rounded"
+          href='https://dynamic.webnovel.com/download'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='rounded border text-base border-blue-500 bg-blue-500 px-4 py-2 text-white transition-all duration-200 ease-in-out hover:bg-transparent hover:text-black dark:border-[#ACA992] dark:bg-transparent dark:text-[#ACA992] dark:hover:bg-[#ACA992] dark:hover:text-black'
         >
           Read on App
         </a>
         <button
           onClick={toggleDarkMode}
-          className="bg-transparent text-gray-700 dark:text-white px-4 py-2 rounded"
+          className='rounded bg-transparent text-base py-2 pl-4 text-gray-700 dark:text-white'
         >
           {darkMode ? (
-            <SunIcon className="h-7 w-7 text-yellow-400" /> // SunIcon for dark mode
+            <SunIcon className='h-7 w-7 text-[#ACA992]' /> // SunIcon for dark mode
           ) : (
-            <MoonIcon className="h-7 w-7 text-gray-900" /> // MoonIcon for light mode
+            <MoonIcon className='h-7 w-7 text-gray-900' /> // MoonIcon for light mode
           )}
         </button>
       </div>
     </header>
-  );
+  )
 }
