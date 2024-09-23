@@ -28,7 +28,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className='flex flex-1 flex-col items-center justify-center'>
+          <div className='flex w-full flex-1 flex-col items-center justify-center'>
             <div className='flex w-72 justify-center overflow-hidden pb-10'>
               <Image
                 src='/cover.jpg'
@@ -42,7 +42,7 @@ const page = () => {
               />
             </div>
 
-            <div>
+            <div className='w-full'>
               <p className='mb-20 mt-4 px-36 text-gray-700 dark:text-[#ACA992]'>
                 <span className='text-lg font-medium'>SYNOPSIS</span> <br />
                 <br />

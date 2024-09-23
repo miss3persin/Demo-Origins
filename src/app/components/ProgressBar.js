@@ -39,9 +39,9 @@ export default function ProgressBar({ chapterId }) {
         isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
     >
-      <div className="w-full max-w-[35rem] bg-black/30 dark:bg-black dark:border border-[#ACA992] rounded-full">
+      <div className="w-full max-w-52 sm:max-w-64 md:max-w-72 h-1 lg:h-2 lg:max-w-96 xl:max-w-[35rem] bg-black/30 dark:bg-black dark:border border-[#ACA992] rounded-full">
         <div
-          className="h-2 bg-blue-500 dark:bg-[#ACA992] rounded-full"
+          className="h-1 lg:h-2 bg-blue-500 dark:bg-[#ACA992] rounded-full"
           style={{ width: `${progress}%` }}
         />
       </div>

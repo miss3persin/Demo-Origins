@@ -53,7 +53,7 @@ const ChapterDetails = ({
   return (
     <>
       <Header title={chapter.title} fixed={true} />
-      <div className='relative flex-grow pb-20 pt-28'>
+      <div className='relative flex-grow pb-20 pt-16 lg:pt-28'>
         <div className='mb-10 mt-8 flex justify-center gap-10'>
           {prevChapterId && (
             <button

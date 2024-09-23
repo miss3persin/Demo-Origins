@@ -37,8 +37,8 @@ export default function Sidebar() {
   return (
     <aside
       className={`${
-        collapsed ? 'w-36' : 'w-[67rem]'
-      } color-change relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg  dark:border-r dark:bg-black`}
+        collapsed ? 'w-36 ' : 'w-[67rem]'
+      } color-change hidden sm:block relative min-h-screen border-[#ACA992] bg-white p-4 shadow-lg  dark:border-r dark:bg-black`}
     >
       <div
         className={`${
