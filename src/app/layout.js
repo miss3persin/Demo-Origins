@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Demo Origins",
-  description: "A High Fantasy Webnovel by miss3persin",
+  description: "A Super High Fantasy Webnovel by miss3persin",
 };
 
 export default function RootLayout({ children }) {

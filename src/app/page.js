@@ -18,7 +18,7 @@ const page = () => {
               Demo Origins
             </h1>
             <p className='mb-10 text-xs font-bold text-gray-900 dark:text-[#ACA992] sm:text-sm md:text-sm lg:text-lg 2xl:text-2xl'>
-            A High Fantasy Webnovel by miss3persin
+            A Super High Fantasy Webnovel by miss3persin
             </p>
 
             <div className='mb-10 flex flex-col items-center justify-center gap-6 sm:flex-row 2xl:flex-col'>
