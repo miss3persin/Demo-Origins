@@ -70,12 +70,12 @@ const page = () => {
               <p className='mb-10 mt-4 text-justify text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
                 I would first like to acknowledge God, the ultimate creator. My
                 family deserves recognition for nurturing my creativity; without
-                them, the novel wouldn’t exist. <br/> Thanks to my friends for
+                them, the novel wouldn’t exist. Thanks to my friends for
                 encouraging my creative spirit. I’m grateful to Emmanuel Solomon
                 for inspiring the idea that sparked this story. A special
                 shoutout to Sokooya Nifemi, the novel’s number one fan, who
                 motivated me to keep writing. I appreciate my sister for her
-                critical insights and reviews. <br/> Finally, thank you to my
+                critical insights and reviews. Finally, thank you to my
                 readers—you’re the reason I continue this journey. Whether
                 you’re bored, curious, or exploring the novel, your support
                 means everything.
