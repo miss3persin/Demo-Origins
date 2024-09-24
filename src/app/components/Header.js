@@ -103,7 +103,7 @@ export default function Header({ title = '', fixed = false }) {
         onClick={() => router.push('/')}
       >
         <img
-          src='/author-profile.jpg'
+          src='/pfp.png'
           alt='Author'
           className='h-12 w-12 rounded-full'
         />

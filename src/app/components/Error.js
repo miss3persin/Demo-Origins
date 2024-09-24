@@ -27,7 +27,7 @@ export const Error = () => {
         <p className='text-2xl font-bold sm:text-5xl text-center text-gray-900 dark:text-[#ACA992]'>
           Failed to Get Chapter
         </p>
-        <p className='text-2xl font-bold sm:text-5xl'> {randomEmoticon}</p>
+        <p className='text-2xl font-bold sm:text-5xl text-gray-900 dark:text-[#ACA992]'> {randomEmoticon}</p>
         <p className='text-gray-900 px-8 sm:px-0 text-xs sm:text-base pt-6 dark:text-[#ACA992] text-center'>
           It's either due of some network problems or the chapter isn't available yet.
         </p>
