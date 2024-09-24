@@ -86,8 +86,8 @@ const page = () => {
                 **ANNOUNCEMENTS**
               </span>
               <p className='mb-10 mt-4 text-center text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
-                - New Chapter Uploads Every Monday by 6PM WAT <br />
-                <br />- Dark Mode is Now Available!
+                - New chapters uploaded every Monday at 6 PM WAT <br />
+                <br />- Dark Mode is now available!
               </p>
             </div>
           </div>

@@ -91,7 +91,7 @@ export default function Header({ title = '', fixed = false }) {
       className={`${
         fixed
           ? 'fixed left-0 right-0 top-0 z-50 px-3 sm:px-10 transition-transform duration-300 lg:px-14 xl:px-20'
-          : 'static px-10'
+          : 'static px-5 sm:px-10'
       } flex items-center justify-between border-[#ACA992] bg-white py-4 shadow-md dark:border-b dark:bg-black ${
         fixed && scrollDirection === 'down'
           ? '-translate-y-full'
