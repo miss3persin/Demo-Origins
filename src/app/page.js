@@ -18,7 +18,7 @@ const page = () => {
               Demo Origins
             </h1>
             <p className='mb-10 text-xs font-bold text-gray-900 dark:text-[#ACA992] sm:text-sm md:text-sm lg:text-lg 2xl:text-2xl'>
-            A Super High Fantasy Webnovel by miss3persin
+            A Super High Fantasy LitRPG Webnovel by miss3persin
             </p>
 
             <div className='mb-10 flex flex-col items-center justify-center gap-6 sm:flex-row 2xl:flex-col'>
@@ -62,7 +62,7 @@ const page = () => {
                 GENRE
               </span>
               <p className='mb-20 mt-4 text-center text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
-                ACTION, ADVENTURE, HIGH FANTASY, SYSTEM, WEAK TO STRONG
+                ACTION, ADVENTURE, LitRPG, HIGH FANTASY, SYSTEM, WEAK TO STRONG
               </p>
               <span className='text-center text-lg font-medium text-gray-700 dark:text-[#ACA992]'>
                 ACKNOWLEDGMENTS
