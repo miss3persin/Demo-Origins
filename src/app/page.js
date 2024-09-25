@@ -56,7 +56,7 @@ const page = () => {
                 was about to fall, a shadowy figure appeared out of nowhere and
                 shoved an 'orb' into my chest. Then everything went dark.
                 <br /> <br /> Confused? So am I. Want to know what happens next?
-                Join the club.
+                Join the club. <br/> <br/> Note: I will be posting this story on RoyalRoad.com
               </p>
               <span className='text-center text-lg font-medium text-gray-700 dark:text-[#ACA992]'>
                 GENRE
