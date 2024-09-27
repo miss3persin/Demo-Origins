@@ -85,9 +85,9 @@ const page = () => {
               <span className='text-center text-lg font-medium text-gray-700 dark:text-[#ACA992]'>
                 **ANNOUNCEMENTS**
               </span>
-              <p className='mb-10 mt-4 text-center text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
-                - New chapters uploaded every Monday at 6 PM WAT <br />
-                <br />- Dark Mode is now available! <br /> <br /> - Demo Origins
+              <p className='mb-10 mt-8 text-center text-xs text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
+                -New chapters every Monday, 6 PM WAT <br /><br /> 
+                <br />- Dark Mode is now available! <br /> <br /> <br /> - Demo Origins
                 now available on{' '}
                 <a
                   href='https://www.webnovel.com/book/demo-origins_29672720800874805'
@@ -96,7 +96,7 @@ const page = () => {
                 >
                   Webnovel
                 </a>
-                 <br /> <br /> - Demo Origins
+                 <br /> <br /> <br />  - Demo Origins
                 now available on{' '}
                 <a
                   href='https://www.royalroad.com/fiction/94621/demo-origins'
@@ -105,7 +105,7 @@ const page = () => {
                 >
                   RoyalRoad
                 </a>
-                 <br /> <br /> - Demo Origins
+                 <br /> <br /> <br />  - Demo Origins
                 now available on{' '}
                 <a
                   href='https://www.scribblehub.com/series/1234242/demo-origins/'
@@ -114,7 +114,7 @@ const page = () => {
                 >
                   Scribble Hub
                 </a>
-                 <br /> <br /> - Demo Origins
+                 <br /> <br /> <br />  - Demo Origins
                 now available on{' '}
                 <a
                   href='https://www.inkitt.com/stories/fantasy/1349407'
