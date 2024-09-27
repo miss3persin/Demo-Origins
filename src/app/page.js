@@ -18,7 +18,7 @@ const page = () => {
               Demo Origins
             </h1>
             <p className='mb-10 text-xs font-bold text-gray-900 dark:text-[#ACA992] sm:text-sm md:text-sm lg:text-lg 2xl:text-2xl'>
-            A Super High Fantasy LitRPG Webnovel by miss3persin
+              A Super High Fantasy LitRPG Webnovel by miss3persin
             </p>
 
             <div className='mb-10 flex flex-col items-center justify-center gap-6 sm:flex-row 2xl:flex-col'>
@@ -56,7 +56,7 @@ const page = () => {
                 was about to fall, a shadowy figure appeared out of nowhere and
                 shoved an 'orb' into my chest. Then everything went dark.
                 <br /> <br /> Confused? So am I. Want to know what happens next?
-                Join the club. <br/> <br/> Note: I will be posting this story on RoyalRoad.com
+                Join the club.
               </p>
               <span className='text-center text-lg font-medium text-gray-700 dark:text-[#ACA992]'>
                 GENRE
@@ -87,7 +87,42 @@ const page = () => {
               </span>
               <p className='mb-10 mt-4 text-center text-sm text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
                 - New chapters uploaded every Monday at 6 PM WAT <br />
-                <br />- Dark Mode is now available!
+                <br />- Dark Mode is now available! <br /> <br /> - Demo Origins
+                now available on{' '}
+                <a
+                  href='https://www.webnovel.com/book/demo-origins_29672720800874805'
+                  target='_blank'
+                  className='font-semibold text-blue-500'
+                >
+                  Webnovel
+                </a>
+                 <br /> <br /> - Demo Origins
+                now available on{' '}
+                <a
+                  href='https://www.royalroad.com/fiction/94621/demo-origins'
+                  target='_blank'
+                  className='font-semibold text-blue-500'
+                >
+                  RoyalRoad
+                </a>
+                 <br /> <br /> - Demo Origins
+                now available on{' '}
+                <a
+                  href='https://www.scribblehub.com/series/1234242/demo-origins/'
+                  target='_blank'
+                  className='font-semibold text-blue-500'
+                >
+                  Scribble Hub
+                </a>
+                 <br /> <br /> - Demo Origins
+                now available on{' '}
+                <a
+                  href='https://www.inkitt.com/stories/fantasy/1349407'
+                  target='_blank'
+                  className='font-semibold text-blue-500'
+                >
+                  Inkitt
+                </a>
               </p>
             </div>
           </div>
