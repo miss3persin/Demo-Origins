@@ -13,7 +13,7 @@ export default function ProgressBar({ chapterId }) {
       const clientHeight = document.documentElement.clientHeight;
 
       // Set a buffer of 500px for progress completion
-      const bufferDistance = 500;
+      const bufferDistance = 700;
 
       // Adjust the total scrollable distance by subtracting bufferDistance
       const adjustedScrollableHeight = scrollHeight - clientHeight - bufferDistance;
@@ -26,7 +26,7 @@ export default function ProgressBar({ chapterId }) {
 
       // Set the visibility of the progress bar, disappear if 450px from the bottom
       const distanceFromBottom = scrollHeight - scrollTop - clientHeight;
-      setIsVisible(distanceFromBottom > 450);
+      setIsVisible(distanceFromBottom > 650);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -41,7 +41,7 @@ export default function ProgressBar({ chapterId }) {
     >
       <div className="w-full max-w-52 sm:max-w-64 md:max-w-72 h-1 lg:h-2 lg:max-w-96 xl:max-w-[35rem] bg-black/30 dark:bg-black dark:border border-[#ACA992] rounded-full">
         <div
-          className="h-1 lg:h-2 bg-blue-500 dark:bg-[#ACA992] rounded-full"
+          className="h-[0.1rem] lg:h-[0.4rem] bg-blue-500 dark:bg-[#ACA992] rounded-full"
           style={{ width: `${progress}%` }}
         />
       </div>

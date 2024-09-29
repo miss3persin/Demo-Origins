@@ -5,11 +5,13 @@ import Image from 'next/image'
 import BookmarkManager from './components/BookmarkManager'
 import Link from 'next/link'
 import { Footer } from './components/Footer'
+import { AltSidebar } from './components/AltSidebar'
 
 const page = () => {
   return (
     <div className='.color-change flex min-h-screen flex-col bg-gray-100 dark:bg-black sm:flex-row'>
       <Sidebar />
+      <AltSidebar />
       <div className='color-change flex-grow p-6 pb-0'>
         <Header />
         <div className='mt-12 flex flex-col items-center gap-2 text-center'>
@@ -87,7 +89,9 @@ const page = () => {
               </span>
               <p className='mb-10 mt-8 text-center text-xs text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
                 -New chapters every Monday, 6 PM WAT <br /><br /> 
-                <br />- Dark Mode is now available! <br /> <br /> <br /> - Demo Origins
+                <br />- Dark mode is now available! <br /> <br /> <br />
+                - Added chapters list on mobile view
+                <br /> <br /> <br /> - Demo Origins
                 now available on{' '}
                 <a
                   href='https://www.webnovel.com/book/demo-origins_29672720800874805'

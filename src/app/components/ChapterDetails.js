@@ -11,6 +11,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css' // Import the styles
 import { Footer } from './Footer'
+import { AltSidebar } from './AltSidebar'
 
 const formatDate = timestampOrDate => {
   if (!timestampOrDate) return 'Date not available';
@@ -53,7 +54,7 @@ const ChapterDetails = ({
   return (
     <>
       <Header title={chapter.title} fixed={true} />
-      <div className='relative flex-grow pb-20 pt-16 lg:pt-28'>
+      <div className='relative flex-grow pb-0 md:pb-20 pt-16 lg:pt-28'>
         <div className='mb-10 mt-8 flex justify-center gap-10'>
           {prevChapterId && (
             <button
@@ -110,6 +111,7 @@ const ChapterDetails = ({
         {/* <Comments chapterId={chapterId} /> */}
       </div>
       <Footer/>
+      <AltSidebar position='static'/>
       <ToastContainer />
     </>
   )
