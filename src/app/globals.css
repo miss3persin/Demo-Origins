@@ -89,7 +89,7 @@ html {
 } */
 
 /* Default styles for span inside p */
-.content-wrapper p span {
+.content-wrapper p span, .content-wrapper ul li span {
   font-size: 13px !important; /* Default font size */
   line-height: 50% !important;
 }
@@ -102,7 +102,7 @@ html {
     font-size: 18px;
   } */
 
-  .content-wrapper p span {
+  .content-wrapper p span, .content-wrapper ul li span {
     font-size: 13px !important;
     line-height: 90% !important;
     
@@ -115,7 +115,7 @@ html {
     font-size: 18px;
   } */
 
-  .content-wrapper p span {
+  .content-wrapper p span, .content-wrapper ul li span {
     font-size: 15px !important;
     line-height: 100% !important;
   }
@@ -127,7 +127,7 @@ html {
     font-size: 27px;
   } */
 
-  .content-wrapper p span {
+  .content-wrapper p span, .content-wrapper ul li span {
     font-size: 16px !important;
     line-height: 130% !important;
   }
@@ -139,7 +139,7 @@ html {
     font-size: 35px;
   } */
 
-  .content-wrapper p span {
+  .content-wrapper p span, .content-wrapper ul li span {
     font-size: 20px !important;
     line-height: 150% !important;
   }
@@ -151,7 +151,7 @@ html {
     font-size: 40px;
   } */
 
-  .content-wrapper p span {
+  .content-wrapper p span, .content-wrapper ul li span {
     font-size: 30px !important;
     line-height: 200% !important;
   }
@@ -165,10 +165,12 @@ html {
 
   .content-wrapper div {
     border-bottom-color: #000000 !important; /* Default color for light mode */
+    border-top-color: #000000 !important; /* Default color for light mode */
   }
   
   .dark .content-wrapper div {
     border-bottom-color: #ACA992 !important; /* Color for dark mode */
+    border-top-color: #ACA992 !important; /* Color for dark mode */
   }
 
   .content-wrapper p {
