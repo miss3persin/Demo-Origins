@@ -1,8 +1,6 @@
 import { db } from '../../../../../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 
-import { db } from '../../../../../firebase';
-import { doc, getDoc } from 'firebase/firestore';
 
 export async function GET(_, { params }) {
   const { id } = params;
