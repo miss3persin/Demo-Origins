@@ -191,5 +191,40 @@ html {
   .dark .content-wrapper div hr{
     border-color: #ACA992 !important; /* Color for dark mode */
   }
+
+
+  /* For WebKit browsers (Chrome, Safari, Edge) */
+  .custom-scrollbar ::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar ::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Scrollbar thumb color */
+}
+
+.dark .custom-scrollbar ::-webkit-scrollbar-thumb {
+  background-color: #ACA992; /* Scrollbar thumb color */
+}
+
+.custom-scrollbar ::-webkit-scrollbar-track {
+  background: white; /* Background of the track */
+}
+
+.custom-scrollbar ::-webkit-scrollbar-track {
+  background: black; /* Background of the track */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* You can set 'auto' or 'thin' */
+  scrollbar-color: #3b82f6 white; /* Scrollbar thumb color, scrollbar track color */
+}
+
+/* For Firefox */
+.dark .custom-scrollbar {
+  scrollbar-width: thin; /* You can set 'auto' or 'thin' */
+  scrollbar-color: #ACA992 black; /* Scrollbar thumb color, scrollbar track color */
+}
+
   
   

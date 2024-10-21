@@ -85,7 +85,7 @@ export default function Sidebar() {
             </div>
           </div>
         ) : (
-          <ul className='space-y-2  h-[91%]'>
+          <ul className='space-y-2  h-[91%] overflow-y-auto custom-scrollbar'>
             {chapters.map(chapter => (
               <li key={chapter.id}>
                 <Link href={`/chapters/${chapter.id}`}>
