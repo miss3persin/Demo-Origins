@@ -7,7 +7,7 @@ import {
   ChevronDoubleRightIcon
 } from '@heroicons/react/24/solid'
 import { db } from '/firebase'
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, query, orderBy } from 'firebase/firestore'
 
 export const AltSidebar = ({ position = 'fixed' }) => { // Accept position prop with default value as 'fixed'
 
@@ -19,7 +19,11 @@ export const AltSidebar = ({ position = 'fixed' }) => { // Accept position prop 
     const fetchChapters = async () => {
       try {
         const chaptersCollection = collection(db, 'chapters')
-        const chapterSnapshot = await getDocs(chaptersCollection)
+
+        // Add 'orderBy' to sort by the 'order' field
+        const chaptersQuery = query(chaptersCollection, orderBy('order', 'asc'))
+
+        const chapterSnapshot = await getDocs(chaptersQuery)
         const chapterList = chapterSnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
@@ -28,7 +32,7 @@ export const AltSidebar = ({ position = 'fixed' }) => { // Accept position prop 
       } catch (error) {
         console.error('Error fetching chapters:', error)
       } finally {
-        setIsLoading(false) // Stop loading when data is fetched
+        setIsLoading(false)
       }
     }
 
