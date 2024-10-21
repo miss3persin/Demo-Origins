@@ -88,7 +88,7 @@ const page = () => {
                 **ANNOUNCEMENTS**
               </span>
               <p className='mb-10 mt-8 text-center text-xs text-gray-700 dark:text-[#ACA992] sm:px-[6.5rem] md:px-24 lg:px-20 lg:text-base xl:px-36 2xl:px-52'>
-                -New chapters every Monday<br /><br /> 
+                - Chapter 11 Drops on the 11th of November<br /><br /> 
                 <br />- Dark mode is now available! <br /> <br /> <br />
                 - Added chapters list on mobile view
                 <br /> <br /> <br /> - Demo Origins
