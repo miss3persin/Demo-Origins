@@ -188,14 +188,14 @@ export default function Header({ title = '', fixed = false }) {
     >
       Buy Me a Coffee
     </a>
-    <a
+    {/* <a
       href='https://dynamic.webnovel.com/download'
       target='_blank'
       rel='noopener noreferrer'
       className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-[#ACA992] dark:hover:bg-[#aca99231]'
     >
       Read on App
-    </a>
+    </a> */}
     <button
       onClick={toggleDarkMode}
       className='block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-200 dark:text-[#ACA992] dark:hover:bg-[#aca99231]'
